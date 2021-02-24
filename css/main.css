@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: arial, helvetica, sans-serif;
+  font-size: 16px;
+}
+/* em is a relative unit of measurment based on the body font size */
+
+.hidden
+{
+  display: none;
+}
+
+.audio-controls
+{
+  margin-top: 1.5em;
+  border-top: thin solid #333;
+}
+
+.audio-controls button
+{
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  background-color: green;
+  color: white;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+.track-ref{
+  cursor: pointer;
+  padding: 1em;
+}

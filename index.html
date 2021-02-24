@@ -6,9 +6,9 @@
 		<!-- sets text language interpretation -->
 		<meta name="viewport" content="initial-scale=1.0, width=device-width">
 		<!-- makes site view properly at mobile -->
-		<title>Web Template</title>
+		<title>Virtual Jukebox</title>
 		<!-- sets title on tab -->
-		<link href="css/reset.css" rel="stylesheet" type="text/css">
+		<!-- <link href="css/reset.css" rel="stylesheet" type="text/css"> -->
 		<!-- links in an resets css file. Put before Custom CSS -->
 
 		<link href="css/main.css" rel="stylesheet" type="text/css">
@@ -16,7 +16,27 @@
 	</head>
 	<body>
 		<!-- Content Goes Here -->
+		<main>
+			<h1 class="hidden">My Audio Example</h1>
+			<h2>My Audio Example</h2>
+			<audio src="audio/Albatroz.mp3"></audio>
+			<!-- just putting the word is the same as putting controls="true" -->
 
+			<!-- add some images to click and play audio -->
+			<img data-trackref="Albatroz" src="images/albatroz.jpeg" alt="album art" class="track-ref">
+			<img data-trackref="STP_ILS" src="images/stp.jpeg" alt="album art" class="track-ref">
+			<img data-trackref="Companion" src="images/wmm.jpeg" alt="album art" class="track-ref">
+			<!-- must be "data-" you can put what ever you want after the -  -->
+
+			<section class="audio-controls">
+				<button>PLAY</button>
+				<button>STOP</button>
+				<button>REWIND</button>
+
+				<input id="volume-control" type="range" min="0" max="100" step="1"><input>
+
+			</section>
+		</main>
 		<script src="js/main.js"></script>
 		<!-- imports java script file -->
 	</body>
